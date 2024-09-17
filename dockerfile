@@ -5,6 +5,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y \
     build-essential \
     python3-dev \
+    pkg-config \
     libhdf5-dev
 
 COPY requirements.txt .
